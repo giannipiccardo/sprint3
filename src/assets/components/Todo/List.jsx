@@ -38,14 +38,18 @@ const List = ({ list, setList }) => {
         <ul>
             {filterr.map(todo => (
                 <li key={todo.id} className={todo.completed ? "completed" : ""}>
-                    {/* <button onClick={() => clickToggle(todo.id)}>{todo.completed ? "t" : ""}</button> */}
+                    {/* `${todo.completed ? "completed" : ""} ${theme === "dark" ? "list-fontColor-dark-mode" : ""}` */}
+                    <button onClick={() => clickToggle(todo.id)}>{todo.completed ? <img src="./src/assets/images/icon-check.svg" className="checkImg" /> : ""}</button>
                     <span>{todo.content}</span>
                 </li>
-            ))}
-            <button onClick={completedFilter}>Completed</button>
-            <button onClick={activeFilter}>Active</button>
-            <button onClick={allFilter}>All</button>
-        </ul>
+            ))
+            }
+            <div className="filters">
+                <button onClick={allFilter}>All</button>
+                <button onClick={activeFilter}>Active</button>
+                <button onClick={completedFilter}>Completed</button>
+            </div>
+        </ul >
     )
 };
 

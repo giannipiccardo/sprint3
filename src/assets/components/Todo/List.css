@@ -1,7 +1,7 @@
 .task-item{
     display: flex;
     align-items: center;
-    background-color: #25273C;
+    /* background-color: #25273C; */
     /* margin: 20px; */
     border: 1px solid gray;
     list-style : none;
@@ -24,4 +24,51 @@
         linear-gradient(60deg, #57ddff, #c058f3) border-box;
     border: 1px solid transparent;
     border-radius: 50%;
+}
+
+.task-container ul{
+    border-radius: 0px;
+    border: 1px solid #383B59;
+    
+}
+
+.task-container ul li {
+    display: flex;
+    align-items: center;
+    /* margin: 15px 0px; */
+    padding: 10px 0px;
+    border: 1px solid #383B59;
+    background-color: #25273C;
+}
+
+.task-container ul li span{
+    background-color: #25273C;
+}
+
+.task-container ul li button{
+    border-radius: 50%;
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2b2d3d;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    border: 1px solid #383B59;
+    background-color: #25273C;
+}
+
+.filters button{
+    width: 100px;
+    height: 30px;
+}
+
+.checkImg{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
