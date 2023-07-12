@@ -1,0 +1,27 @@
+.task-item{
+    display: flex;
+    align-items: center;
+    background-color: #25273C;
+    /* margin: 20px; */
+    border: 1px solid gray;
+    list-style : none;
+    padding: 20px 0px;
+}
+
+.task-item button{
+    border-radius: 50%;
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2b2d3d;
+}
+/* background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%)); */
+/* //Poner para que cuando un usuario haga click */
+
+.task-item button:hover {
+    background: 
+        linear-gradient(#25273C, #25273C) padding-box,
+        linear-gradient(60deg, #57ddff, #c058f3) border-box;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}

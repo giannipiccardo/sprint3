@@ -3,4 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  background-color: #181824;
+  list-style : none;
+}
+
+.task-container{
+    margin: auto;
+    width: 60%;
+}
+
+* button{
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
