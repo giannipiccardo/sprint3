@@ -4,31 +4,26 @@ import "./List.css"
 const List = ({ list, setList }) => {
     const [filterr, setFilter] = useState(list)
 
-    const updateFilters = () => {
-        setFilter(list)
-    }
-
     useEffect(() => {
-        updateFilters()
-    }, [list])
+        setFilter(list);
+    }, [list]);
 
     const clickToggle = (id) => {
         setList((prevList) => {
-            prevList.map((todo) => {
-                todo.id === id ? { ...todo, completed: !todo.completed } : todo
-            })
-        })
-    }
+            return prevList.map((todo) => {
+                return todo.id === id ? { ...todo, completed: !todo.completed } : todo;
+            });
+        });
+    };
+
 
     const completedFilter = () => {
-        let itemsLeft = list.filter(todo => todo.completed)
-        setFilter(itemsLeft)
-    }
+        setFilter(list.filter(todo => todo.completed));
+    };
 
     const activeFilter = () => {
-        let itemsLeft = list.filter(todo => !todo.completed)
-        setFilter(itemsLeft)
-    }
+        setFilter(list.filter(todo => !todo.completed));
+    };
 
     const allFilter = () => {
         setFilter(list)
