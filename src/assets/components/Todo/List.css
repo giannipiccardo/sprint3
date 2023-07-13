@@ -11,8 +11,8 @@
     align-items: center;
     /* margin: 15px 0px; */
     padding: 10px 0px;
-    background-color: #25273C;
-    border: 1px solid #383B59;
+    /* background-color: #25273C;
+    border: 1px solid #383B59; */
 }
 
 .task-container ul li button{
@@ -20,7 +20,7 @@
     margin: 0 20px;
     width: 30px;
     height: 30px;
-    border: 1px solid #2b2d3d;
+    /* border: 1px solid #2b2d3d; */
 }
 
 .task-item:hover {
@@ -33,15 +33,28 @@
 
 .filters{
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     padding: 10px 0px;
+}
+
+.filters-dark-mode{
     border: 1px solid #383B59;
     background-color: #25273C;
+}
+
+.filters-light-mode{
+    border: 1px solid #383B59;
+    background-color: #1826c0;
+    color: black;
 }
 
 .filters button{
     width: 100px;
     height: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 .checkImg{
@@ -49,8 +62,25 @@
     width: 30px;
     height: 30px;
     background-image: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-color: transparent;
 }
 
 .text-underline{
     text-decoration: line-through;
+}
+
+.text-light-mode{
+    color: black;
+}
+
+.check-button-dark-mode{
+    background-color: hsl(235, 21%, 11%);
+}
+
+@media (min-width: 0px) and (max-width: 800px){
+    .task-container{
+        width: 100vw;
+        top: 30%;
+        left: 0;
+    }
 }

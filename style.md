@@ -34,7 +34,7 @@ The designs were created to the following widths:
 - Very Dark Grayish Blue: hsl(233, 14%, 35%)
 - Very Dark Grayish Blue: hsl(237, 14%, 26%)
 
-## Typography
+<!-- ## Typography
 
 ### Body Copy
 
@@ -43,4 +43,4 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
-- Weights: 400, 700
+- Weights: 400, 700 -->

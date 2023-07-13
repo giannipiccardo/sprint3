@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./List.css"
 
-const List = ({ list, setList }) => {
+const List = ({ list, setList, theme }) => {
     const [filterr, setFilter] = useState(list)
     let itemsLeft = list.filter((todo) => !todo.completed)
     useEffect(() => {
@@ -33,21 +33,21 @@ const List = ({ list, setList }) => {
         <div className="task-container">
             <ul>
                 {filterr.map(todo => (
-                    <li key={todo.id} className={todo.completed ? "completed" : ""}>
-                        {/* `${todo.completed ? "completed" : ""} ${theme === "dark" ? "list-fontColor-dark-mode" : ""}` */}
-                        <button onClick={() => clickToggle(todo.id)} className="task-item">{todo.completed ? <img src="./src/assets/images/icon-check.svg" className="checkImg" /> : ""}</button>
+                    <li key={todo.id} className={`${todo.completed ? "completed" : ""} ${theme === "dark" ? "dark-mode" : "light-mode"}`}>
+
+                        <button onClick={() => clickToggle(todo.id)} className="task-item dark-mode check-button-dark-mode">{todo.completed ? <img src="./src/assets/images/icon-check.svg" className="checkImg" /> : ""}</button>
                         <span className={todo.completed ? "text-underline" : ""}>{todo.content}</span>
                     </li>
                 ))
                 }
-                <div className="filters">
+                <div className={`filters ${theme === "dark" ? "dark-mode filters-dark-mode" : "light-mode filters-light-mode "}`}>
                     <span>{itemsLeft.length} Items Left</span>
                     <button onClick={allFilter}>All</button>
                     <button onClick={activeFilter}>Active</button>
                     <button onClick={completedFilter}>Completed</button>
                 </div>
             </ul >
-        </div>
+        </div >
     )
 };
 

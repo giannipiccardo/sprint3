@@ -1,8 +1,8 @@
 .form-container{
     display: flex;
     align-items: center;
-    background-color: #25273C;
-    border: 1px solid gray;
+    /* background-color: #25273C;
+    border: 1px solid gray; */
     margin: auto;
     width: 40%;
     position: absolute;
@@ -14,8 +14,8 @@
 .form-container input{
     width: 75%;
     margin: 10px;
-    padding: 5px 0px;
-    background-color: #2b2d3d;
+    padding: 10px 0px;
+    /* background-color: #2b2d3d; */
     cursor: pointer;
     border-radius: 5px;
 }
@@ -23,9 +23,24 @@
 .add-task-button{
     width: 20%;
     list-style : none;
-    padding: 5px 0px;
-    background-color: #25273C;
-    color: white;
+    padding: 10px 0px;
+    /* background-color: #25273C; */
+    /* color: white; */
     cursor: pointer;
     border-radius: 5px;
+}
+
+.border-dark-mode{
+    border: 1px solid white;
+}
+.border-light-mode{
+    border: 1px solid black;
+}
+
+@media (min-width: 0px) and (max-width: 800px){
+    .form-container{
+        width: 100vw;
+        top: 20%;
+        left: 0;
+    }
 }

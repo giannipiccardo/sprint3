@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Form.css";
 
-const Form = ({ list, setList }) => {
+const Form = ({ list, setList, theme }) => {
     const [inputValue, setInputValue] = useState("");
 
     const onChangeHandler = (e) => {
@@ -25,14 +25,15 @@ const Form = ({ list, setList }) => {
     };
 
     return (
-        <div className="form-container">
+        <div className={`form-container ${theme === "dark" ? "dark-mode filters-dark-mode" : "light-mode"}`}>
             <input
                 type="text"
                 value={inputValue}
                 onChange={onChangeHandler}
                 onKeyDown={onKeyDownHandler}
+                className={`add-task-button ${theme === "dark" ? "dark-mode filters-dark-mode border-dark-mode" : "light-mode border-light-mode"}`}
             />
-            <button onClick={addTask} className="add-task-button">
+            <button onClick={addTask} className={`add-task-button ${theme === "dark" ? "dark-mode filters-dark-mode border-dark-mode" : "light-mode border-light-mode"}`}>
                 Add Task
             </button>
         </div>

@@ -6,3 +6,19 @@
     right: 10px;
     align-items: center;
 }
+
+.footer-dark-mode{
+    color: white;
+}
+
+.footer-light-mode{
+    color: black;
+}
+
+@media (min-width: 0px) and (max-width: 800px){
+    .footer-container{
+        position: absolute;
+        width: 100%;
+        margin-top: 15px;
+    }
+}

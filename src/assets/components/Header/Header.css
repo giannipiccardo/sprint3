@@ -7,7 +7,8 @@
     align-items: center;
     position: absolute;
     top: 50px;
-    left: 30%
+    left: 30%;
+    color: white;
 }
 
 .header-text h1{
@@ -18,4 +19,21 @@
 
 .header-text button{
     background-color: transparent;
+}
+
+@media (min-width: 0px) and (max-width: 800px){
+    .headerContainer{
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .header-text{
+        top: 35px;
+        left: 5%
+    }
+
+    .header-text h1{
+        margin-right: 50%;
+        font-size: 50px;    
+    }
 }
