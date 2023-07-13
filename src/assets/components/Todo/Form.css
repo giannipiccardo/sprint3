@@ -1,55 +1,31 @@
 .form-container{
     display: flex;
     align-items: center;
-    padding: 10px 0 10px 0;
     background-color: #25273C;
-    /* margin: 20px; */
     border: 1px solid gray;
-    /* padding: 20px 0px; */
     margin: auto;
     width: 40%;
     position: absolute;
-    top: 200px;
+    top: 125px;
     left: 432px;
+    border-radius: 15px;
 }
 
-.check-task-button{
-    border-radius: 50%;
-    margin: 0 10px 0 20px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border: 1px solid #2b2d3d;
-} 
-
-.check-task-button:hover {
-    background: 
-        linear-gradient(#25273C, #25273C) padding-box,
-        linear-gradient(60deg, #57ddff, #c058f3) border-box;
-    border: 1px solid transparent;
-    border-radius: 50%;
-} 
-
 .form-container input{
-    width: 70%;
+    width: 75%;
     margin: 10px;
-    
-    padding: 10px 0px;
+    padding: 5px 0px;
     background-color: #2b2d3d;
     cursor: pointer;
     border-radius: 5px;
 }
+
 .add-task-button{
-    width: 15%;
-    margin: 10px;
+    width: 20%;
     list-style : none;
-    padding: 10px 0px;
+    padding: 5px 0px;
     background-color: #25273C;
     color: white;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.add-task-button:hover{
-    background-color: rgb(56, 55, 55);
 }

@@ -35,7 +35,7 @@ const List = ({ list, setList }) => {
                 {filterr.map(todo => (
                     <li key={todo.id} className={todo.completed ? "completed" : ""}>
                         {/* `${todo.completed ? "completed" : ""} ${theme === "dark" ? "list-fontColor-dark-mode" : ""}` */}
-                        <button onClick={() => clickToggle(todo.id)}>{todo.completed ? <img src="./src/assets/images/icon-check.svg" className="checkImg" /> : ""}</button>
+                        <button onClick={() => clickToggle(todo.id)} className="task-item">{todo.completed ? <img src="./src/assets/images/icon-check.svg" className="checkImg" /> : ""}</button>
                         <span className={todo.completed ? "text-underline" : ""}>{todo.content}</span>
                     </li>
                 ))

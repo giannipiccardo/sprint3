@@ -26,7 +26,6 @@ const Form = ({ list, setList }) => {
 
     return (
         <div className="form-container">
-            <button className="check-task-button"></button>
             <input
                 type="text"
                 value={inputValue}
