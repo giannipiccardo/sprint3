@@ -44,19 +44,12 @@ function App() {
     // { id: 32, content: "React es fácil", completed: false },
   ]);
 
-  let itemsLeft = list.filter((todo) => !todo.completed)
-  let amountItemsLeft = itemsLeft.length
-
   return (
     <>
       <Header theme={theme} setTheme={setTheme}></Header>
-      <div className='task-container'>
-        <Form list={list} setList={setList}></Form>
-        <List list={list} setList={setList}></List>
-        <span>{amountItemsLeft} Items Left</span>
-      </div>
-      <Footer></Footer>
-      {/* <Content theme={theme} /> */}
+      <Form list={list} setList={setList} theme={theme}></Form>
+      <List list={list} setList={setList} theme={theme}></List>
+      <Footer theme={theme}></Footer>
     </>
   )
 }

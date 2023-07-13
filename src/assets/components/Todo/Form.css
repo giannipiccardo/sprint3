@@ -1,13 +1,16 @@
 .form-container{
     display: flex;
     align-items: center;
-    width: 100%;
-    margin: 0 0 30px 0;
     padding: 10px 0 10px 0;
     background-color: #25273C;
     /* margin: 20px; */
     border: 1px solid gray;
     /* padding: 20px 0px; */
+    margin: auto;
+    width: 40%;
+    position: absolute;
+    top: 200px;
+    left: 432px;
 }
 
 .check-task-button{
